@@ -14,7 +14,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U postgres -d projectdb"]
+      test: ["CMD-SHELL", "pg_isready -U postgres -d skill-exam-2400030848"]
       interval: 5s
       timeout: 5s
       retries: 10
